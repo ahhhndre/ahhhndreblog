@@ -39,6 +39,7 @@
     "@material-ui/icons": "^3.0.1",
     "color": "^3.1.0",
     "core-js": "^2.6.2",
+    "firacode": "^1.205.0",
     "gatsby": "^2.0.77",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-algolia": "^0.3.0",
@@ -88,6 +89,7 @@
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.7",
     "screenfull": "^4.0.0",
+    "typeface-fira-mono": "0.0.54",
     "typeface-open-sans": "^0.0.54"
   }
 }

@@ -16,7 +16,7 @@ import withRoot from "../withRoot";
 import theme from "../styles/new-theme";
 import globals from "../styles/globals";
 
-import "typeface-open-sans";
+import "typeface-fira-mono";
 
 const Navigator = asyncComponent({
   resolve: () => import("../components/Navigator")

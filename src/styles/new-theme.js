@@ -21,7 +21,7 @@ const theme = createMuiTheme({
       linesMargin: "20px"
     },
     fonts: {
-      styledFamily: "Open Sans",
+      styledFamily: "Fira Mono",
       styledFonts: "300,400,600"
     }
   },
@@ -156,7 +156,7 @@ const theme = createMuiTheme({
   },
   typography: {
     useNextVariants: true,
-    fontFamily: `Fira Code, Arial, sans-serif`,
+    fontFamily: `Fira Mono`,
     fontSize: 16
   }
 });
