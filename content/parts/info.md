@@ -2,4 +2,4 @@
 title: info
 ---
 
-I am a front-end web developer. I used to be a web designer too, but now I concentrate on the code.
+Full Stack Developer: Jack of all trades, master of some. Strong opinions, weekly held. Flow like water.

@@ -2,8 +2,7 @@
 title: footnote
 ---
 
-* this is a demo site of the [gatsby-starter-personal-blog](https://github.com/greglobinski/gatsby-starter-personal-blog)
-* built by [greg lobinski](https://www.greglobinski.com)
-* GatsbyJS, ReactJs, CSS in JS - [Front-end web development with Greg](https://dev.greglobinski.com)
-* delivered by [Netlify](https://www.netlify.com/)
-* photos by [unsplash.com](https://unsplash.com)
+* &copy; 2019 André Wanlin.
+* Built with [Gatsby](https://gatsbyjs.org) & [React](https://reactjs.org).
+* Delivered by [Netlify](https://www.netlify.com/).
+* Photos by [Unsplash](https://unsplash.com).

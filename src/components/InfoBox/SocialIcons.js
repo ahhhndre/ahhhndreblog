@@ -7,6 +7,7 @@ import config from "../../../content/meta/config";
 import GithubIcon from "!svg-react-loader!../../images/svg-icons/github.svg?name=GithubIcon";
 import FacebookIcon from "!svg-react-loader!../../images/svg-icons/facebook.svg?name=FacebookIcon";
 import TwitterIcon from "!svg-react-loader!../../images/svg-icons/twitter.svg?name=TwitterIcon";
+import DevBadgeIcon from "!svg-react-loader!../../images/svg-icons/devbadge.svg?name=DevBadgeIcon";
 
 const styles = theme => ({
   social: {
@@ -37,7 +38,8 @@ const Socialcons = props => {
   const icons = {
     twitter: TwitterIcon,
     facebook: FacebookIcon,
-    github: GithubIcon
+    github: GithubIcon,
+    devto: DevBadgeIcon
   };
 
   return (
