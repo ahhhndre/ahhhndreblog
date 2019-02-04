@@ -18,11 +18,10 @@ class Index extends React.Component {
 
   render() {
     const { data } = this.props;
-    const facebook = (((data || {}).site || {}).siteMetadata || {}).facebook;
 
     return (
       <div>
-        <Seo facebook={facebook} />
+        <Seo />
       </div>
     );
   }
@@ -57,9 +56,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     site {
       siteMetadata {
-        facebook {
-          appId
-        }
+        title
       }
     }
   }

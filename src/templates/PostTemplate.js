@@ -25,13 +25,12 @@ class PostTemplate extends React.Component {
 
   render() {
     const { data, pageContext } = this.props;
-    const facebook = (((data || {}).site || {}).siteMetadata || {}).facebook;
 
     return (
       <Main>
-        <Post post={data.post} slug={pageContext.slug} author={data.author} facebook={facebook} />
+        <Post post={data.post} slug={pageContext.slug} author={data.author} />
         <Footer footnote={data.footnote} />
-        <Seo data={data.post} facebook={facebook} />
+        <Seo data={data.post} />
       </Main>
     );
   }
@@ -95,9 +94,7 @@ export const postQuery = graphql`
     }
     site {
       siteMetadata {
-        facebook {
-          appId
-        }
+        title
       }
     }
   }
