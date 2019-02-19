@@ -1,7 +1,7 @@
 ﻿---
 title: JavaScript Polyfills
 subTitle: Making sure all your JS works
-category: "Frontend"
+category: "Front-end"
 cover: joey-kyber-121699-unsplash.jpg
 ---
 

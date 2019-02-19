@@ -1,7 +1,7 @@
 ﻿---
 title: Tower of Babel?
 subTitle: Basic Transpiling Overview
-category: "Frontend"
+category: "Front-end"
 cover: grant-lemons-80424-unsplash.jpg
 ---
 
