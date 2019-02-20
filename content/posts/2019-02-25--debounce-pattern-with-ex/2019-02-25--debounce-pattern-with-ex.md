@@ -13,11 +13,12 @@ Now why would you want to do that? Well say you were building a feature where so
 
 With a debounce function it will wait a set period of time and then run your function smoothing out the number of times it fires. You can also haveit run immediately and then wait a set period of time depending on your specific needs. Let's look at this exact example in more detail. First here's what the [debounce function](https://davidwalsh.name/javascript-debounce-function) looks like:
 
-```JavaScript
+```javascript
 function debounce(func, wait, immediate) {
   var timeout;
   return function() {
-    var context = this, args = arguments;
+    var context = this,
+      args = arguments;
     var later = function() {
       timeout = null;
       if (!immediate) func.apply(context, args);
@@ -27,17 +28,17 @@ function debounce(func, wait, immediate) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
-};
+}
 ```
 
 And here is how you would use us it:
 
-```JavaScript
-function checkSlide(e){
+```javascript
+function checkSlide(e) {
   // do stuff related to scrolling
 }
 
-window.addEventListener('scroll', debounce(checkSlide, 250, false));
+window.addEventListener("scroll", debounce(checkSlide, 250, false));
 ```
 
 As you can see the debounce function is an example of a high-order function - a function that returns another function. By doing this it creates a closure which allows us to retain the arguments used by debounce in this case. In the example above the checkSlide function would only run after 250 ms as we had pass in false for the immediate value.

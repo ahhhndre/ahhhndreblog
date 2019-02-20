@@ -11,10 +11,10 @@ While working through the [ES6](https://es6.io) course by [Wes Bos](https://webb
 
 **Arrow Functions** are a nice clean way to write functions without some of the boilerplate. Here's an example using an array and the map function:
 
-```JavaScript
-const names =['Bob', 'Mary', 'Jeff', 'Sally']
+```javascript
+const names = ["Bob", "Mary", "Jeff", "Sally"];
 //Old school
-const oldSchool = names.map(function(name){
+const oldSchool = names.map(function(name) {
   return name.length;
 });
 
@@ -26,7 +26,7 @@ Now you don't want to always use arrow functions for everything as you might get
 
 **String Literals** allow us to make nice strings without all the concatenations or special characters to represent line breaks. There are endless ways that you can use this new feature but one example I've seen is being able to generate dynamic HTML and/or CSS. To create a string literal you use back ticks (the key to the left of the number 1 on your keyboard) and then when you want to insert a variable you use \${}. Here's a few examples of it in use:
 
-```JavaScript
+```javascript
 // Building up some HTML
 `<li>
   <span class="name">${cityName}, ${place.state}</span>
@@ -34,13 +34,13 @@ Now you don't want to always use arrow functions for everything as you might get
 </li>`;
 
 // Adding some text to the screen using the ternary operator to handle the leading zero
-endTime.textContent =  `Be Back At ${hour  >  12  ?  hour  -  12  :  hour}:
-${minutes  <  10  ?  '0'  :  ''}${minutes}`
+endTime.textContent = `Be Back At ${hour > 12 ? hour - 12 : hour}:
+${minutes < 10 ? "0" : ""}${minutes}`;
 ```
 
 **Destructuring** allows us to unpack items from arrays or objects into variables in a clean and simple way. One tricky thing is that when working with arrays you use the square brackets but when working with objects you use the curly brackets. As this one is hard to describe I'm going to show it as an example:
 
-```JavaScript
+```javascript
 // Old school
 const details = ['Andre Wanlin', 38, '@ahhhndre'];
 const name = details[0];
